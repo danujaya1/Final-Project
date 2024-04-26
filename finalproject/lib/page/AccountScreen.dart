@@ -221,7 +221,7 @@ class AccountScreen extends StatelessWidget {
                     backgroundColor: Color(0xff1F99CC),
                     minimumSize: Size(300, 45)),
                 onPressed: () {
-                  authcontroller.signOut();
+                  authcontroller.signOut(context);
                   Get.toNamed(RouteName.loginscreen);
                 },
                 child: Text(
